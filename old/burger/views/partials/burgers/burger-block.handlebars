@@ -1,0 +1,10 @@
+<tr>
+	<td><strong>{{name}}</strong></td>
+	{{#unless eaten}}
+	<td> <button type="btn" class="btn btn-success" id="eat" data-id="{{id}}" data-new="{{data}}">eat! </button></td>
+	{{/unless}}
+	{{#if eaten}}
+	<td> <button type="btn" class="btn btn-danger" id="delete" data-id="{{id}}" data-new="{{data}}">remove </button>
+	</td>
+	{{/if}}
+</tr>

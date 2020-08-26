@@ -1,0 +1,13 @@
+body {
+    background-image: url('../images/background.png');
+}
+.navbar-brand {
+    color: white !important;
+    background-color: teal !important;
+}
+h2 {
+    color: teal;
+}
+
+
+

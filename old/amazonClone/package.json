@@ -1,0 +1,31 @@
+{
+  "name": "amazonclone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bamazonCustomer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucasFoulkes/amazonClone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LucasFoulkes/amazonClone/issues"
+  },
+  "homepage": "https://github.com/LucasFoulkes/amazonClone#readme",
+  "dependencies": {
+    "cli": "^1.0.1",
+    "cli-table": "^0.3.1",
+    "color": "^3.1.2",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "inquirer": "^6.5.0",
+    "moment": "^2.24.0",
+    "mysql": "^2.17.1",
+    "require": "^2.4.20"
+  },
+  "devDependencies": {}
+}

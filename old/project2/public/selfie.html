@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!-- local css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <canvas id="snapshot" width=640 height=480></canvas>
+            <video id="player" controls autoplay></video>
+        </div>
+        <div class="row">
+            <button id="capture">Selfie</button>
+            <a href="#" id="downloader" download="image.png">Download</a>
+            <button onclick="location.href='signup.html'">back</button>
+        </div>
+    </div>
+
+    <script>
+        var player = document.getElementById('player');
+        var snapshotCanvas = document.getElementById('snapshot');
+        var captureButton = document.getElementById('capture');
+        var download = document.getElementById('downloader');
+        var videoTracks;
+        var handleSuccess = function (stream) {
+            player.srcObject = stream;
+            videoTracks = stream.getVideoTracks();
+        };
+        download.addEventListener('click', function () {
+            document.getElementById("downloader").href = document.getElementById("snapshot").toDataURL("image/png").replace(/^data:image\/[^;]/, 'data:application/octet-stream');
+        });
+        captureButton.addEventListener('click', function () {
+            var context = snapshot.getContext('2d');
+            context.drawImage(player, 0, 0, snapshotCanvas.width, snapshotCanvas.height);
+        });
+        navigator.mediaDevices.getUserMedia({ video: true })
+            .then(handleSuccess);
+    </script>
+</body>
+
+</html>

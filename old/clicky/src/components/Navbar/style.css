@@ -1,0 +1,8 @@
+.navbar {
+    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+    padding: 3em;
+}
+.span {
+    font-size: 30px;
+    font-weight: bold;
+}

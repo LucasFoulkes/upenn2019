@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- jquery cdn -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <!-- local css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- bootstrap cdn -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script defer src="face-api.min.js"></script>
+  <script defer src="script.js"></script>
+  <title>Document</title>
+
+</head>
+
+<body>
+
+  <div class="card" style="width: 18rem;">
+    <video class="card-img-top" id='video' width='360' height='280' autoplay muted></video>
+    <div class="card-body text-center">
+      <h5 class="card-title">look directly into the camera</h5>
+      <p id='login-display' class="font-weight-light"></p>
+      <br>
+      <button onclick="location.href='signup.html'" type="button" class="btn btn-primary"> Signup</button>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+body,
+html {
+    height: 100%;
+}
+.bg {
+    background-image: url("../images/Breaking-bad-background_smaller.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+header {
+    text-align: right;
+    padding: 10px;
+    float: right;
+    margin: 10px
+   
+}
+.game {
+    padding: 10px;
+}
+h1 {
+    font-family: "Lucida Console";
+    background: darkgreen;
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 2px;
+}
+h5 {
+    margin: 2px;
+    padding:0px;
+    color: white;
+    background:black;
+}
+h4 {
+    font-family: "Lucida Console";
+    background: darkgreen;
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 2px;
+}
+button {
+    background:whitesmoke;
+    color: black;
+    display: inline;  
+}
+#attack {
+    display: block;
+}
+/*should change witht the page with*/
+img {
+    height: 75px;
+}
+button:hover {
+    border: 5px solid yellow; 
+}
+#player {
+    border: 8px solid green;   
+}
+#player:hover {
+    border: 8px solid greenyellow; 
+}
+.enemies {
+    background: red;
+    border: 5px solid darkred;
+}
+#enemy {
+    background: black;
+    color: white;
+    border:8px solid red;
+}
+#enemy:hover {
+    border:8px solid darkred;
+}
+

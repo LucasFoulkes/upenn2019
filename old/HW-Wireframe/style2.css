@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+/* wonder what this does */
+
+body {
+    background-color: blue;
+    width: 960px;
+    margin: auto;
+    padding: 0;
+}
+
+header, nav, section, article, aside, footer, p {
+    margin-top: 0.5em;
+    background-color: cornflowerblue;
+    display: block;
+    text-align: center;
+    padding: 1.5em;
+}
+
+article {
+    background-color: blue;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+}
+section,aside{
+    width: 50%;
+}
+section {
+    margin-right: 0.5em;
+}

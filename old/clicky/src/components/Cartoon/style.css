@@ -1,0 +1,20 @@
+.card {
+    background: #fff;
+    border-radius: 2px;
+    margin: 2rem;
+    height:300px;
+    width: 300px;
+    position: relative;
+    text-align: left;
+  }
+  
+  .card > img {
+    padding: 3em;
+    height: 100%;
+  }
+
+  
+
+  
+
+  

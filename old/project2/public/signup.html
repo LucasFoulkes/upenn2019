@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!-- local css -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <form action="/profile" method="post" enctype="multipart/form-data">
+        <input type="text" id="username" placeholder="username" name='username'>
+        <br>
+        <input type="file" name="avatar" />
+        <br>
+        <button type="submit">Submit</button>
+        <br>
+    </form>
+    <button onclick="location.href='selfie.html'">Take a Selfie</button>
+    <button onclick="location.href='login.html'">back</button>
+    <!-- need to add something so that when this happens an entry is added to a mysql database -->
+</body>
+
+</html>

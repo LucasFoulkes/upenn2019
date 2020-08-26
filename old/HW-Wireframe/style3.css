@@ -1,0 +1,22 @@
+body {
+    background-color: red;
+    display: grid;
+    width: 960px;
+    margin: auto;
+}
+
+header, nav, footer, section, article, aside, p {
+    background-color: lightcoral;
+    margin: 0.5em;
+    padding: 1.5em;
+    text-align: center;
+}
+
+article{
+    background-color: red;
+}
+
+header, nav, footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}

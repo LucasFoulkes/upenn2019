@@ -1,0 +1,29 @@
+{
+  "name": "Liri-Bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucasFoulkes/Liri-Bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LucasFoulkes/Liri-Bot/issues"
+  },
+  "homepage": "https://github.com/LucasFoulkes/Liri-Bot#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "dotenv": "^8.0.0",
+    "google-tts-api": "0.0.4",
+    "moment": "^2.24.0",
+    "node-spotify-api": "^1.1.1",
+    "say": "^0.16.0",
+    "speak-tts": "^2.0.8"
+  }
+}

@@ -1,0 +1,108 @@
+* {
+    text-decoration: none;
+}
+
+body {
+    background-image: url("../../assets/images/background.png");
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font: 1em Sans-Serif;
+}
+
+nav {
+    background-color: white;
+    border-bottom: 2px solid lightgray;
+    padding: 0 calc((100% - 960px)/2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h1 {
+    background-color: teal;
+    color: white;
+    padding: 0.75em;
+    font: 1.75em Serif;
+    font-weight: bolder;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row;
+}
+
+ul li, ul span {
+    padding-left: 1.5em;
+    margin: auto;
+}
+
+ul li a, ul span {
+    color: gray;
+}
+
+ul li a:hover {
+    color: teal;
+    font-weight: bolder;
+}
+
+section {
+    flex: 1;
+    margin: 2em calc((100% - 960px)/2) 7em;     
+    background-color: white;
+    border: 1px lightgray solid;
+    padding: 1.5em;
+    height: 35em;
+}
+
+section form {
+    display: flex;
+    flex-flow: column;
+}
+
+section label {
+    margin-bottom: 0.5em;
+}
+
+section input {
+    margin-bottom: 1.5em;
+    padding: 0.5em;
+}
+
+section button {
+    border: none;
+    background-color: teal;
+    color: white;
+    padding: 0.75em;
+    width: 5em;
+}
+
+h2 {
+    color: teal;
+    font: 1.75em Serif;
+    font-weight: bolder;
+}
+
+hr {
+    border: 2px solid lightgray;
+    margin-bottom: 2em;
+    margin-top: 1.5em;
+}
+
+img {
+    position: relative;
+    float: left;
+    margin: 0 30px 30px 0;
+}
+
+footer {
+    border-top: 5px teal solid;
+    color: white;
+    padding-top: 2.5em;
+    padding-bottom: 1.5em;
+    text-align: center;
+    background-color: rgb(75, 75, 75);
+    font: 0.85em Sans-Serif;
+}

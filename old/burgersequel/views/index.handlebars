@@ -1,0 +1,43 @@
+<div class="container bg-warning">
+
+    <center>
+        <img src="assets/img/burger.jpg" alt="">
+        <h1>the Burger</h1>
+
+        <div class="row">
+            <div class="col-4">
+                {{> cards/card-block}}
+            </div>
+            <div class="col-4">
+                <div class="input-group mb-3" style="max-width: 25em;">
+                    <div class="input-group">
+                    </div>
+                    <input type="text" class="form-control" placeholder="Your Burger" name="burger" id="submit-input">
+
+                </div>
+                <p class="lead">the finest dining experience</p>
+                <button type="btn" id="submit" class="btn btn-danger btn-lg">Submit</button>
+
+            </div>
+            <div class="col-4">
+                {{> cards/card-block-eaten }}
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+    </center>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <span>
+                <a class="nounderline lead" href="/api/burgers">API Burger List |</a>
+                <a class="nounderline lead" href="https://github.com/LucasFoulkes/burger">GitHub Repo</a>
+            </span>
+            <a class="nounderline lead" href="https://github.com/LucasFoulkes">Foulkes Solutions&#169;&#174;&#8482;</a>
+
+        </div>
+    </nav>
+
+</div>
